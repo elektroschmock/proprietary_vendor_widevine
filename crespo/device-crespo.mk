@@ -17,4 +17,8 @@ LOCAL_PATH := vendor/widevine/crespo
 # widevine blob necessary for Nexus S hardware
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/libwvm.so
+    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/libwvdrm_L3.so \
+    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(LOCAL_PATH)/proprietary/libwvm.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
